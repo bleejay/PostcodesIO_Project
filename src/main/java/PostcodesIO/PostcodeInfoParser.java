@@ -34,6 +34,12 @@ public class PostcodeInfoParser {
         return postcodeResult;
     }
 
+    public String getCountry(){return (String) postcodeResult.get("country");}
+
+    public String getRegion(){return (String) postcodeResult.get("region");}
+
+    public String getNuts(){return (String) postcodeResult.get("nuts");}
+
     private JSONObject getResult(){return (JSONObject) postcodeInfoFile.get("result");}
 
     private String getError(){return (String) postcodeInfoFile.get("error");}
